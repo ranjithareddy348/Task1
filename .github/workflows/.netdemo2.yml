@@ -31,8 +31,8 @@ jobs:
         uses: NuGet/setup-nuget@v1.0.5
         
       - name: Restore NuGet packages
-        run : nuget restore WebApplication2.sln
+        run : nuget restore ranjithareddy348/Task1/blob/main/WebApplication2.sln
         
       - name: Build the solution
-        run: msbuild -m WebApplication2.sln
+        run: msbuild ranjithareddy348/Task1/blob/main/WebApplication2.sln
   
