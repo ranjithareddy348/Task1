@@ -21,8 +21,8 @@ jobs:
         dotnet-version: 5.0.403
  
     - name: Build
-      run: dotnet build http://localhost:8081/Jenkins/job/Git%20Test2/ws/WebApplication2.sln
+      run: dotnet build C:\Users\ranjitha.kirubakaran\source\repos\WebApplication2\WebApplication2.sln
     - name: Test
-      run: dotnet test http://localhost:8081/Jenkins/job/Git%20Test2/ws/WebApplication2.sln
+      run: dotnet test C:\Users\ranjitha.kirubakaran\source\repos\WebApplication2\WebApplication2.sln
     
     
