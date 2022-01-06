@@ -21,8 +21,8 @@ jobs:
         dotnet-version: 5.0.403
  
     - name: Build
-      run: dotnet build 'D:\a\Task1\Task1\WebApplication2.sln\WebApplication2.sln'
+      run: dotnet build 'D:\a\Task1\Task1\WebApplication2\WebApplication2.sln'
     - name: Test
-      run: dotnet test 'D:\a\Task1\Task1\WebApplication2.sln\WebApplication2.sln'
+      run: dotnet test 'D:\a\Task1\Task1\WebApplication2\WebApplication2.sln'
     
     
