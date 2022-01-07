@@ -18,12 +18,12 @@ jobs:
     - name: Setup .NET
       uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: 5.0.403
+        dotnet-version: 5.0.404
  
     - name: Build
-      run: dotnet build D:\a\Task1\blob\main\WebApplication2.sln
+      run: dotnet build C:\inetpub\wwwroot\mywebapp
     - name: Test
-      run: dotnet test D:\a\Task1\blob\main\WebApplication2.sln
+      run: dotnet test C:\inetpub\wwwroot\mywebapp
     
     
     
