@@ -21,9 +21,8 @@ jobs:
         dotnet-version: 5.0.404
  
     - name: Build
-      run: dotnet build C:\inetpub\wwwroot\mywebapp
+      run: dotnet build "C:\Program Files\Git\bin\git.exe"
     - name: Test
-      run: dotnet test C:\inetpub\wwwroot\mywebapp
-    
+      run: dotnet test "C:\Program Files\Git\bin\git.exe"
     
     
