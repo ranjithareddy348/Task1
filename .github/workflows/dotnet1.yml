@@ -21,8 +21,7 @@ jobs:
         dotnet-version: 5.0.404
  
     - name: Build
-      run: dotnet build "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\msbuild.exe"
+      run: dotnet build Task1/WebApplication2.sln
   
     - name: Test
-      run: dotnet test "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\msbuild.exe"
-    
+      run: dotnet test Task1/WebApplication2.sln    
