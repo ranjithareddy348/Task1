@@ -21,7 +21,7 @@ jobs:
         dotnet-version: 5.0.404
  
     - name: Build
-      run: dotnet build gh repo clone ranjithareddy348/Task1/WebApplication2.sln
+      run: dotnet msbuild --help
   
     - name: Test
       run: dotnet test gh repo clone ranjithareddy348/Task1/WebApplication2.sln  
