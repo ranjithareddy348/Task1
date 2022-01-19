@@ -21,6 +21,6 @@ jobs:
         dotnet-version: 5.0.404
  
     - name: Build
-      run: dotnet msbuild WebApplication2.sln  
+      run: dotnet msbuild  https://github.com/ranjithareddy348/Task1.git
     - name: Test
-      run: dotnet test WebApplication2.sln  
+      run: dotnet test https://github.com/ranjithareddy348/Task1.git
