@@ -21,6 +21,6 @@ jobs:
         dotnet-version: 5.0.404
  
     - name: Build
-      run: dotnet msbuild WebApplication2.csproj
+      run: dotnet msbuild WebApplication2.sln
     - name: Test
-      run: dotnet test WebApplication2.csproj
+      run: dotnet test WebApplication2.sln
