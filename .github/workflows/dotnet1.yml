@@ -34,7 +34,7 @@ jobs:
 
         username: ${{ secrets.SECRET_RANJI}}
 
-        password: ${{ secrets.Trust1}}
+    
         subject: ${{ github.job }} job of ${{ github.repository }} has ${{ job.status }}
 
 # email body as text
