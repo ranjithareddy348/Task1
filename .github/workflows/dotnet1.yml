@@ -33,7 +33,7 @@ jobs:
         server_port: 465
 
         username: ${{ secrets.SECRET_RANJI}}
-        password: ${{ secrets.SECRET_RANJI }}
+        password: ${{ secrets.24022000 }}
 
     
         subject: ${{ github.job }} job of ${{ github.repository }} has ${{ job.status }}
