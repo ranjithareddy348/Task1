@@ -34,7 +34,7 @@ jobs:
 
         username: ${{ secrets.SECRET_RANJI}}
         
-        password: ${{ secrets.EMAIL_PASSWORD }}
+        password: ${{ secrets.SECRET_RANJI}}
     
         subject: ${{ github.job }} job of ${{ github.repository }} has ${{ job.status }}
 
