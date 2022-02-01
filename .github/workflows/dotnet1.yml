@@ -21,9 +21,9 @@ jobs:
         dotnet-version: 5.0.404
  
     - name: Build
-      run: dotnet msbuild Task1.WebApplication2.sln
+      run: dotnet msbuild ranjithareddy348/Task1/WebApplication2.sln
     - name: Test
-      run: dotnet test Task1.WebApplication2.sln
+      run: dotnet test ranjithareddy348/Task1/WebApplication2.sln
     - name: Send mail
       if: always()
       uses: dawidd6/action-send-mail@v2
