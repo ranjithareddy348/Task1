@@ -31,9 +31,9 @@ jobs:
         server_address: smtp.gmail.com
 
         server_port: 465
-        SECRET_RANJI: ${{ secrets.SECRET_RANJI }}
+        username: ${{ secrets.SECRET_RANJI }}
 
-        SECRET_PASSWORD: ${{ secrets.SECRET_PASSWORD }}
+        password: ${{ secrets.SECRET_PASSWORD }}
     
         subject: ${{ github.job }} job of ${{ github.repository }} has ${{ job.status }}
 
