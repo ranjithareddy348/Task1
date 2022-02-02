@@ -1,18 +1,18 @@
-name: Run CI
-on: [push, pull_request]
+name: Build
+on: push
 
 jobs:
-  normal_ci:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Run normal CI
-        run: ./run-tests
-
-  pull_request_ci:
-    runs-on: windows-latest
-    if: ${{ github.event_name == 'pull_request' }}
-    steps:
-      - uses: actions/checkout@v2
-      - name: Run PR CI
-        run: ./run-additional-pr-ci
+      - name: Build with logs
+        run: |
+          mkdir ${{ runner.temp }}/build_logs
+          ./build.sh --log-path ${{ runner.temp }}/build_logs
+      - name: Upload logs on fail
+        if: ${{ failure() }}
+        uses: actions/upload-artifact@v2
+        with:
+          name: Build failure logs
+          path: ${{ runner.temp }}/build_logs
