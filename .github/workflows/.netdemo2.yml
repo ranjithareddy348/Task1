@@ -30,4 +30,4 @@ jobs:
       
         
       - name: Build the solution
-        run: msbuild Task1.WebApplication.sln
+        run: msbuild WebApplication2.sln
