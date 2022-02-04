@@ -20,7 +20,7 @@ jobs:
     - name: Build
       run: msbuild WebApplication2.sln
     - name: Test
-      run: dotnet test WebApplication2.sln
+      run: test WebApplication2.sln
     - name: Send mail
       if: always()
       uses: dawidd6/action-send-mail@v2
