@@ -28,3 +28,18 @@ jobs:
         uses: microsoft/setup-msbuild@v1.1
       - name: Build the solution
         run: msbuild WebApplication2.sln
+        
+        
+  build:    
+    runs-on: [ubuntu-latest]
+
+    
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+      
+      - name: Setup Msbuild
+        uses: microsoft/setup-msbuild@v1.1
+      - name: Build the solution
+        run: msbuild WebApplication2.sln
+
