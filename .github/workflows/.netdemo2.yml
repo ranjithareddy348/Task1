@@ -23,8 +23,6 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-      - name: Upload a Build Artifact
-        uses: actions/upload-artifact@v2.2.2
       
       - name: Setup Msbuild
         uses: microsoft/setup-msbuild@v1.1
