@@ -34,9 +34,9 @@ jobs:
         run: msbuild WebApplication2.sln
 #       - name: Build with dotnet
 #         run: dotnet build WebApplication2.sln
-# #       - name: dotnet publish
-# #         run: |
-# #          dotnet publish -c Release -o dotnetcorewebapp 
+      - name: dotnet publish
+        run: |
+          dotnet publish -c Release -o dotnetcorewebapp 
       
 
       
