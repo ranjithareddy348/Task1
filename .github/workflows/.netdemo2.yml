@@ -28,11 +28,12 @@ jobs:
         uses: microsoft/setup-msbuild@v1.1
       - name: Build the solution
         run: msbuild WebApplication2.sln
-      - name: Upload Artifact GitHub Action
+      - name: Upload Build Artifact
         uses: actions/upload-artifact@v2
-        with: 
-           name: my-artifact
-           path: ranjithareddy348/Task1/WebApplication2.sln
+        with:
+          name: webapp1
+          path: ${{ github.workspace }}/ranjithareddy348/Task1/
+       
     
 
 #       - name: Step 1 - Create a temporary artifact downloads folder
