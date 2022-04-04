@@ -28,7 +28,6 @@ jobs:
     - name: Install dependencies
       run: dotnet restore
     - name: Build the solution
-      run: dotnet build WebApplication2.sln
-
+      run: dotnet build "D:\a\Task1\Task1\WebApplication2.sln"
 
 
