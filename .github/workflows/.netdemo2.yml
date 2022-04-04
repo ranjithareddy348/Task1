@@ -28,8 +28,8 @@ jobs:
         uses: microsoft/setup-msbuild@v1.1
       - name: Build the solution
         run: msbuild WebApplication2.sln
-      - name: deploy
-        run: deploy the WebApplication2.sln
+      - name: publish
+        run: publish the WebApplication2.sln
         
     
 
