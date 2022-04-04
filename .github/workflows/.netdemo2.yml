@@ -32,7 +32,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: webapp1
-          path: ${{ github.workspace }}/ranjithareddy348/Task1/
+          path: D:\a\Task1\Task1\WebApplication2.sln
        
     
 
