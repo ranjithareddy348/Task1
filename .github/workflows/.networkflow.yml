@@ -21,13 +21,19 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     - uses: actions/checkout@v3
-    - name: Setup dotnet
-      uses: actions/setup-dotnet@v2
-      with:
-        dotnet-version: 5.0.403
-    - name: Install dependencies
-      run: dotnet restore
+    - name: Setup Msbuild
+      uses: microsoft/setup-msbuild@v1.1
     - name: Build the solution
-      run: dotnet build "D:\a\Task1\Task1\WebApplication2.sln"
+      run: msbuild WebApplication2.sln
+    - name: publish
+      run: publish "D:\a\Task1\Task1\WebApplication2"
+#     - name: Setup dotnet
+#       uses: actions/setup-dotnet@v2
+#       with:
+#         dotnet-version: 5.0.403
+#     - name: Install dependencies
+#       run: dotnet restore
+#     - name: Build the solution
+#       run: dotnet build "D:\a\Task1\Task1\WebApplication2.sln"
 
 
