@@ -29,6 +29,8 @@ jobs:
       - name: Build the solution
         run: msbuild WebApplication2.sln
       - name: deploy
+        run: deploy the WebApplication2.sln
+        
     
 
 #       - name: Step 1 - Create a temporary artifact downloads folder
